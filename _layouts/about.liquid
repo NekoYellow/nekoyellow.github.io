@@ -43,7 +43,7 @@ layout: default
     <!-- News -->
     {% if page.news and site.announcements and site.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a style="color: inherit">news</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -59,9 +59,33 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">publications</a>
       </h2>
       {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Internships -->
+    {% if site.internships and site.interns.enabled %}
+      <h2>
+        <a style="color: inherit">internships</a>
+      </h2>
+      {% include internships.liquid %}
+    {% endif %}
+
+    <!-- Projects -->
+    {% if page.projects %}
+      <h2>
+        <a style="color: inherit">projects</a>
+      </h2>
+      {% include projects.liquid %}
+    {% endif %}
+
+    <!-- Teaching -->
+    {% if page.teaching %}
+      <h2>
+        <a" style="color: inherit">teaching</a>
+      </h2>
+      {% include teaching.liquid %}
     {% endif %}
 
     <!-- Social -->

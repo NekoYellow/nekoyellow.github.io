@@ -1,0 +1,19 @@
+<div class="teaching">
+  {% if site.teaching != blank %}
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+        {% assign teaching = site.teaching | reverse %}
+        {% for item in teaching %}
+          <tr>
+            <th scope="row" style="width: 20%">{{ item.semester }}</th>
+            <td>
+              {{ item.role }} of <a href="{{ item.course_url }}" class="bold-link">{{ item.course }} @ {{ item.school }}</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% else %}
+    <p>No teaching so far...</p>
+  {% endif %}
+</div>

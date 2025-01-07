@@ -1,0 +1,30 @@
+<div class="internships">
+  {% if site.interns != blank %}
+    {% assign interns_size = site.internships | size %}
+    <div
+      class="table-responsive"
+      {% if include.limit and site.interns.scrollable and interns_size > 3 %}
+        style="max-height: 60vw"
+      {% endif %}
+    >
+      <table class="table table-sm table-borderless">
+        {% assign internships = site.internships | reverse %}
+        {% if include.limit and site.interns.limit %}
+          {% assign interns_limit = site.interns.limit %}
+        {% else %}
+          {% assign interns_limit = interns_size %}
+        {% endif %}
+        {% for item in internships limit: interns_limit %}
+          <tr>
+            <th scope="row" style="width: 20%">{{ item.startdate | date: '%b %Y' }} - {{ item.enddate | date: '%b %Y' }}</th>
+            <td>
+              {{ item.role }} @ <a href="{{ item.company_url }}" class="bold-link">{{ item.company }}</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% else %}
+    <p>No interns so far...</p>
+  {% endif %}
+</div>
