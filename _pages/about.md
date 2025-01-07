@@ -22,6 +22,6 @@ social: false # includes social icons at the bottom of the page
 
 I am a junior in School of Computer Science, Fudan University.
 
-Having initially pursued natural sciences during my first year, I found my true passion in the world of algorithms through the early exposure to competitive programming. This sparked my involvement in programming contests and simultaneously fueled my exploration of more detailed topics in cs such as systems and AI. Ultimately, I made the decision to switch majors, a choice I embraced despite the additional year of study.
+Having initially pursued natural sciences during my first year, I found my true passion in the world of algorithms through the early exposure to competitive programming. This sparked my involvement in programming contests and simultaneously fueled my exploration of more detailed topics in cs such as systems and AI. Switching majors then felt like a natural step, despite the additional year of study.
 
 I am interested in applications of LLM, as well as AI4S.
