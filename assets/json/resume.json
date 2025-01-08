@@ -20,13 +20,15 @@
       "courses": ["Object-Oriented Programming", "Operating Systems", "Computer Vision", "Game Theory"]
     }
   ],
-  "experiences": [
+  "work": [
     {
-      "name": "Data Developer Intern",
-      "summary": "Went through a data analysis project to explore effective promoting strategy aiming to improve user activeness. Built a pipeline to produce structured tables out of massive data logs. Implemented utility functions in Python for data processing.",
-      "highlights": ["Data Science"],
+      "name": "Ant Group",
+      "position": "Data Developer Intern",
+      "url": "https://www.antgroup.com/en",
       "startDate": "2023-06-26",
-      "endDate": "2023-08-01"
+      "endDate": "2023-08-01",
+      "summary": "Went through a data analysis project to explore effective promoting strategy aiming to improve user activeness. Built a pipeline to produce structured tables out of massive data logs. Implemented utility functions in Python for data processing.",
+      "highlights": []
     }
   ],
   "projects": [
