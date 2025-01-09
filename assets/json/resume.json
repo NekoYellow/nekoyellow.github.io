@@ -61,7 +61,7 @@
     },
     {
       "name": "RookieDB",
-      "summary": "Developed B+ tree, query optimization, Locking and Concurrency in the compact database implementation",
+      "summary": "Developed support for B+ tree indices, efficient join algorithms, query optimization, multigranularity locking to support concurrent execution of transactions, and database recovery on a bare-bones database implementation.",
       "highlights": ["Database"],
       "startDate": "2023-05-01",
       "endDate": "2023-07-10",
