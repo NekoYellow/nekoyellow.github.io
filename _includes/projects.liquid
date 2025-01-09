@@ -1,35 +1,45 @@
-<div class="col">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
-      {% if project.img %}
-        {%
-          include figure.liquid
-          loading="eager"
-          path=project.img
-          sizes = "250px"
-          alt="project thumbnail"
-          class="card-img-top"
-        %}
+<div class="projects">
+  {% if site.projects != blank %}
+    {% assign projects_size = site.projects | size %}
+    <div
+      class="table-responsive"
+      {% if include.limit and site.demos.scrollable and projects_size > 3 %}
+        style="max-height: 60vw"
       {% endif %}
-      <div class="card-body">
-        <h2 class="card-title">{{ project.title }}</h2>
-        <p class="card-text">{{ project.description }}</p>
-        <div class="row ml-1 mr-1 p-0">
-          {% if project.github %}
-            <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-              </div>
-              {% if project.github_stars %}
-                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                  <i class="fa-solid fa-star"></i>
-                  <span id="{{ project.github_stars }}-stars"></span>
-                </span>
-              {% endif %}
-            </div>
-          {% endif %}
-        </div>
-      </div>
+    >
+      <table class="table table-sm table-borderless">
+        {% assign projects = site.projects | reverse %}
+        {% if include.limit and site.demos.limit %}
+          {% assign projects_limit = site.demos.limit %}
+        {% else %}
+          {% assign projects_limit = projects_size %}
+        {% endif %}
+        {% for item in projects limit: projects_limit %}
+          <tr>
+            {% if item.imgsrc != blank %}
+              <th scope="row" style="width: 20%"><img src="{{ item.imgsrc }}" alt="{{ item.title }}" style="width: 150px; float: left" /></th>
+            {% else %}
+              <th scope="row" style="width: 20%"></th>
+            {% endif %}
+            <td>
+              <b><a class="project-link" href="{{ item.codeurl }}">{{ item.title }}</a> {{ item.startdate | date: '%b %Y' }} - {{ item.enddate | date: '%b %Y' }}</b>
+              {{ item.content }}
+              {% comment %} {% if item.paperurl != blank or item.codeurl != blank %}
+                <p>
+                {% if item.paperurl != blank %}
+                  <b><a class="paper-link" href="{{ item.paperurl }}">paper</a></b>
+                {% endif %}
+                {% if item.codeurl != blank %}
+                  <b><a class="code-link" href="{{ item.codeurl }}">code</a></b>
+                {% endif %}
+                </p>
+              {% endif %} {% endcomment %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
     </div>
-  </a>
+  {% else %}
+    <p>No projects so far...</p>
+  {% endif %}
 </div>

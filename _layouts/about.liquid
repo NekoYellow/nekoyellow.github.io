@@ -64,20 +64,20 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Demo Projects -->
+    {% if site.demos.enabled %}
+      <h2>
+        <a href="{{ '/projects/' | relative_url }}" style="color: inherit">projects</a>
+      </h2>
+      {% include projects.liquid limit=true %}
+    {% endif %}
+
     <!-- Internships -->
     {% if site.internships and site.interns.enabled %}
       <h2>
         <a style="color: inherit">internships</a>
       </h2>
       {% include internships.liquid %}
-    {% endif %}
-
-    <!-- Projects -->
-    {% if page.projects %}
-      <h2>
-        <a style="color: inherit">projects</a>
-      </h2>
-      {% include projects.liquid %}
     {% endif %}
 
     <!-- Teaching -->

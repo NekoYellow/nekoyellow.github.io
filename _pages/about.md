@@ -15,7 +15,6 @@ profile:
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-projects: false # includes a list of projects
 teaching: true # includes a list of teaching
 social: false # includes social icons at the bottom of the page
 ---
