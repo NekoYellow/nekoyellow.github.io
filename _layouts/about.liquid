@@ -43,7 +43,7 @@ layout: default
     <!-- News -->
     {% if page.news and site.announcements and site.announcements.enabled %}
       <h2>
-        <a style="color: inherit">news</a>
+        <a style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -59,7 +59,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
@@ -67,7 +67,7 @@ layout: default
     <!-- Demo Projects -->
     {% if site.demos.enabled %}
       <h2>
-        <a href="{{ '/projects/' | relative_url }}" style="color: inherit">projects</a>
+        <a href="{{ '/projects/' | relative_url }}" style="color: inherit">Projects</a>
       </h2>
       {% include projects.liquid limit=true %}
     {% endif %}
@@ -75,7 +75,7 @@ layout: default
     <!-- Internships -->
     {% if site.internships and site.interns.enabled %}
       <h2>
-        <a style="color: inherit">internships</a>
+        <a style="color: inherit">Internships</a>
       </h2>
       {% include internships.liquid %}
     {% endif %}
@@ -83,7 +83,7 @@ layout: default
     <!-- Teaching -->
     {% if page.teaching %}
       <h2>
-        <a" style="color: inherit">teaching</a>
+        <a" style="color: inherit">Teaching</a>
       </h2>
       {% include teaching.liquid %}
     {% endif %}
