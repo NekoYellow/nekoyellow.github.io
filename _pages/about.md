@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <center>
-    <a href='mailto:harvyhyy@gmail.com'>Email</a> | 
+    <a href='mailto:yyhuang21@m.fudan.edu.cn'>Email</a> | 
     <a href='https://github.com/NekoYellow'>GitHub</a></center>
 
 news: false # includes a list of news items
