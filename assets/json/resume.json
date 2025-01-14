@@ -83,6 +83,12 @@
   ],
   "awards": [
     {
+      "title": "Third Prize of CSCC OS Designing Contest",
+      "date": "2024-01-12",
+      "awarder": "CCF Shanghai",
+      "summary": "Extending Operating System for new functionalities"
+    },
+    {
       "title": "CCPC Bronze Medal",
       "date": "2023-11-16",
       "awarder": "",
