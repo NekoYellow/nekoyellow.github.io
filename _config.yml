@@ -152,7 +152,7 @@ collections:
     permalink: /:collection/:title/
   internships:
     output: false
-  teaching:
+  services:
     output: false
 
 announcements:
