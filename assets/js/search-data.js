@@ -57,10 +57,10 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_texthydra/";
-            },},{id: "teaching-",
+            },},{id: "services-",
           title: '',
           description: "",
-          section: "Teaching",},{
+          section: "Services",},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
