@@ -23,4 +23,4 @@ I am a junior in School of Computer Science, Fudan University.
 
 Having initially pursued natural sciences during my first year, I found a passion in the world of algorithms and systems through some exposure to competitive programming, and some serious practicing followed, which ultimately encouraged me to switch to my current major.
 
-I am interested in applications of LLM, as well as AI4S.
+I am interested in LLM applications, especially Agents. Would also like to explore the field of Systems (MLSys).
