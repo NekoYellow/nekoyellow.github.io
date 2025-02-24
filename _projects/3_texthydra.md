@@ -4,7 +4,7 @@ startdate: 2024-11-25
 enddate: 2024-12-31
 title: TextHydra
 imgsrc: /assets/img/texthydra.png
-paperurl:
+paperurl: https://nekoyellow.github.io/assets/pdf/TextHydra_for_Text_Tampering_Detection.pdf
 codeurl: https://tianchi.aliyun.com/competition/entrance/532223
 ---
 

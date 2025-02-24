@@ -24,16 +24,16 @@
             <td>
               <b><a class="project-link" href="{{ item.codeurl }}">{{ item.title }}</a> {{ item.startdate | date: '%b %Y' }} - {{ item.enddate | date: '%b %Y' }}</b>
               {{ item.content }}
-              {% comment %} {% if item.paperurl != blank or item.codeurl != blank %}
+              {% if item.paperurl != blank or item.codeurl != blank %}
                 <p>
                 {% if item.paperurl != blank %}
                   <b><a class="paper-link" href="{{ item.paperurl }}">paper</a></b>
                 {% endif %}
-                {% if item.codeurl != blank %}
+                {% comment %} {% if item.codeurl != blank %}
                   <b><a class="code-link" href="{{ item.codeurl }}">code</a></b>
-                {% endif %}
+                {% endif %} {% endcomment %}
                 </p>
-              {% endif %} {% endcomment %}
+              {% endif %}
             </td>
           </tr>
         {% endfor %}
